@@ -2,10 +2,14 @@
 
 USRNet can handle super-resolution (x2, x3 and x4) and deblurring for various blur kernels via a single model!
 
+Classical (traditional) SISR degradation model
+----------
+<img src="figs/classical_degradation_model.png" width="500px"/> 
+
 <img src="figs/fig1.png" width="500px"/> 
 
 
-Approximated bicubic kernel under the classical (traditional) SR degradation model
+Approximated bicubic kernel under classical SR degradation model assumption
 ----------
 <img src="figs/bicubic_kernelx2.png" width="500px"/> 
 <img src="figs/bicubic_kernelx3.png" width="500px"/> 
