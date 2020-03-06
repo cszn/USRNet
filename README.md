@@ -24,7 +24,8 @@ Approximated bicubic kernel under classical SR degradation model assumption
 
 
 
-
+References
+----------
 ```
 @inproceedings{zhang2020deep, % USRNet
   title={Deep unfolding network for image super-resolution},
