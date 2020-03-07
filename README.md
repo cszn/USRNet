@@ -7,19 +7,19 @@ _[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich
 Contents
 ----------
 
-* [Classical (traditional) SISR degradation model](#classical-(traditional)-SISR-degradation-model)
+* [Classical SISR degradation model](#classical-sisr-degradation-model)
 * [Motivation](#motivation)
 * [Unfolding algorithm](#unfolding-algorithm)
-* [Deep unfolding SR network](#deep-unfolding-SR-network)
+* [Deep unfolding SR network](#deep-unfolding-sr-network)
 * [Visual results](#visual-results)
-* [Approximated bicubic kernel under classical SR degradation model assumption](#Approximated)
-* [Results on bicubicly degradated LR images](#Results)
+* [Approximated bicubic kernel under classical SR degradation model assumption](#approximated-bicubic-kernel-under-classical-sr-degradation-model-assumption)
+* [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
 
 
 
 
-Classical (traditional) SISR degradation model
+Classical SISR degradation model
 ----------
 <img src="figs/classical_degradation_model.png" width="440px"/> 
 
