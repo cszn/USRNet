@@ -124,7 +124,7 @@ Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well 
 
 Real image SR
 ----------
-<img src="figs/chip.png" width="88px"/> `LR image`
+<img src="figs/chip.png" width="88px"/> `LR image, 108x52`
 
 <img src="figs/chip_x1.png" width="88px"/> `USRNet(x1), deblurring`
 
@@ -140,9 +140,9 @@ Real image SR
 
 The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4, x5) and Gaussian blur kernels (with width 0.6, 1.0, 1.8, 2.4, 3).
 
-<img src="figs/butterfly.bmp" width="440x"/> `Zoomed LR image`
+<img src="figs/butterfly.bmp" width="440x"/> `Zoomed LR image, 256x256`
 
-<img src="figs/butterfly_x2.bmp" width="440x"/> `USRNet(x2)`
+<img src="figs/butterfly_x2.bmp" width="440x"/> `USRNet(x2), 512x512`
 
 
 References
