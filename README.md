@@ -16,6 +16,15 @@ Motivation
 [2] "Deep plug-and-play super-resolution for arbitrary blur kernels." CVPR, 2019.
 ```
 
+Learning-based single image super-resolution (SISR)
+methods are continuously showing superior effectiveness
+and efficiency over traditional model-based methods, largely
+due to the end-to-end training. However, different from
+model-based methods that can handle the SISR problem
+with different scale factors, blur kernels and noise levels
+under a unified MAP (maximum a posteriori) framework,
+learning-based methods generally lack such flexibility.
+
 <img src="figs/fig1.png" width="440px"/>
 
 
