@@ -67,7 +67,9 @@ Visual results
 
 <img src="figs/test_36_L1.png" width="50px"/> <img src="figs/test_36_k1_s4_mse.png" width="200px"/> <img src="figs/test_36_k1_s4_gan.png" width="200px"/> 
 
-```From left to right: LR image; result of USRNet(x4); result of USRGAN(x4)```
+<img src="figs/test_18_x4_k121.png" width="50px"/> <img src="figs/test_18_k12_s4_mse.png" width="200px"/> <img src="figs/test_18_k12_s4_gan.png" width="200px"/> 
+
+From left to right: `LR image`; `result of USRNet(x4)`; `result of USRGAN(x4)`
 
 
 
