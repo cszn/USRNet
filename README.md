@@ -33,10 +33,22 @@ While the classical degradation model can result in various LR images for an HR 
 
 Unfolding algorithm
 ----------
+By unfolding the MAP inference via a half-quadratic splitting
+algorithm, a fixed number of iterations consisting of alternately solving a data subproblem and a prior subproblem
+can be obtained.
+
 #TODO
 
 Deep unfolding SR network (USRNet)
 ----------
+We proposes an end-to-end trainable unfolding network which leverages both learning-based
+methods and model-based methods. 
+
+The proposed network inherits the flexibility of model-based methods to super-resolve
+blurry, noisy images for different scale factors via a single
+model, while maintaining the advantages of learning-based methods.
+
+
 
 #TODO
 
