@@ -4,8 +4,7 @@ _[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich
 
 [paper]
 
-Contents
-----------
+___________
 
 * [Classical SISR degradation model](#classical-sisr-degradation-model)
 * [Motivation](#motivation)
@@ -18,8 +17,6 @@ Contents
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
 * [References](#references)
-
-
 
 Classical SISR degradation model
 ----------
