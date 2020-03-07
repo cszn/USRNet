@@ -55,11 +55,6 @@ model`, while maintaining the `advantages of learning-based methods`.
 
 #TODO
 
-Approximated bicubic kernel under classical SR degradation model assumption
-----------
-<img src="figs/bicubic_kernelx2.png" width="450px"/> 
-<img src="figs/bicubic_kernelx3.png" width="450px"/> 
-<img src="figs/bicubic_kernelx4.png" width="450px"/>
 
 Visual results
 ----------
@@ -70,6 +65,16 @@ Visual results
 <img src="figs/test_18_x4_k121.png" width="50px"/> <img src="figs/test_18_k12_s4_mse.png" width="200px"/> <img src="figs/test_18_k12_s4_gan.png" width="200px"/> 
 
 From left to right: `LR image`; `result of USRNet(x4)`; `result of USRGAN(x4)`
+
+Approximated bicubic kernel under classical SR degradation model assumption
+----------
+<img src="figs/bicubic_kernelx2.png" width="450px"/> 
+<img src="figs/bicubic_kernelx3.png" width="450px"/> 
+<img src="figs/bicubic_kernelx4.png" width="450px"/>
+
+Results on bicubicly degradated LR images
+----------
+<img src="figs/test_42_x4_k1_L.png" width="87px"/> <img src="figs/test_42_x4_k1_E.png" width="348px"/> 
 
 
 
