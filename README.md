@@ -16,6 +16,7 @@ ___________
 * [Approximated bicubic kernel under classical SR degradation model assumption](#approximated-bicubic-kernel-under-classical-sr-degradation-model-assumption)
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
+* [Real image SR](#real-image-sr)
 * [References](#references)
 
 Classical SISR degradation model
@@ -120,6 +121,25 @@ Even trained with kernel size 25x25, USRNet generalizes well to much larger kern
 
 `(b) Result of USRGAN(x3) for kernel size 70x70`  
 Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well to much larger kernel size and another scale factor 3.
+
+Real image SR
+----------
+<img src="figs/chip.png" width="88px"/> `LR image`
+
+<img src="figs/chip_x1.png" width="88px"/> `USRNet(x1), deblurring`
+
+<img src="figs/chip_x2.png" width="176px"/> `USRNet(x2)`
+
+<img src="figs/chip_x3.png" width="264px"/> `USRNet(x3)`
+
+<img src="figs/chip_x4.png" width="352px"/> `USRNet(x4)`
+
+<img src="figs/chip_x5.png" width="440px"/> `USRNet(x5)`
+
+<img src="figs/chip.png" width="440x"/> `Zoomed LR`
+
+The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4, x5) and Gaussian blur kernels (with width 0.6, 1.0, 1.8, 2.4, 3).
+
 
 References
 ----------
