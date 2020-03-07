@@ -12,11 +12,6 @@ Motivation
 ----------
 <img src="figs/category.png" width="536px"/>
 
-```
-[1] "Learning deep CNN denoiser prior for image restoration." CVPR, 2017.
-[2] "Deep plug-and-play super-resolution for arbitrary blur kernels." CVPR, 2019.
-```
-
 Learning-based single image super-resolution (SISR)
 methods are continuously showing superior effectiveness
 and efficiency over traditional model-based methods, largely
@@ -24,7 +19,13 @@ due to the end-to-end training. However, different from
 model-based methods that can handle the SISR problem
 with different scale factors, blur kernels and noise levels
 under a unified MAP (maximum a posteriori) framework,
-learning-based methods generally lack such flexibility.
+learning-based methods (e.g., SRMD [3]) generally lack such flexibility.
+
+```
+[1] "Learning deep CNN denoiser prior for image restoration." CVPR, 2017.
+[2] "Deep plug-and-play super-resolution for arbitrary blur kernels." CVPR, 2019.
+[3] "Learning a single convolutional super-resolution network for multiple degradations." CVPR, 2018.
+```
 
 <img src="figs/fig1.png" width="440px"/>
 
