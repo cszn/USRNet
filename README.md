@@ -61,6 +61,16 @@ Approximated bicubic kernel under classical SR degradation model assumption
 <img src="figs/bicubic_kernelx3.png" width="450px"/> 
 <img src="figs/bicubic_kernelx4.png" width="450px"/>
 
+Visual results
+----------
+<img src="figs/test_50_x4_k81.png" width="50px"/> <img src="figs/test_50_k8_s4_mse.png" width="200px"/> <img src="figs/test_50_k8_s4_gan.png" width="200px"/> 
+
+<img src="figs/test_36_L1.png" width="50px"/> <img src="figs/test_36_k1_s4_mse.png" width="200px"/> <img src="figs/test_36_k1_s4_gan.png" width="200px"/> 
+
+```From left to right: LR image; result of USRNet(x4); result of USRGAN(x4)```
+
+
+
 Generalizability
 ----------
 <img src="figs/g1_LR.png" width="110px"/> <img src="figs/g1_HR.png" width="330px"/> 
