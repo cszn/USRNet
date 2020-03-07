@@ -38,7 +38,7 @@ While the classical degradation model can result in various LR images for an HR 
 Unfolding algorithm
 ----------
 By unfolding the MAP inference via a half-quadratic splitting
-algorithm, a fixed number of iterations consisting of alternately solving a data subproblem and a prior subproblem
+algorithm, a fixed number of iterations consisting of alternately solving a `data subproblem` and a `prior subproblem`
 can be obtained.
 
 #TODO
