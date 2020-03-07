@@ -1,6 +1,7 @@
-# USRNet
+# Deep unfolding network for image super-resolution
+Kai Zhang, [Luc Van Gool](https://vision.ee.ethz.ch/people-details.OTAyMzM=.TGlzdC8zMjQ4LC0xOTcxNDY1MTc4.html), [Radu Timofte](http://people.ee.ethz.ch/~timofter/)
 
-USRNet can handle `super-resolution (x2, x3 and x4) and deblurring` for various blur kernels via `a single model`!
+[paper]
 
 Classical (traditional) SISR degradation model
 ----------
