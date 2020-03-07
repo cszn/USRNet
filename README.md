@@ -9,7 +9,7 @@ Contents
 
 * [Classical (traditional) SISR degradation model](#Classical)
 * [Motivation](#motivation)
-* [Unfolding algorithm](#unfolding algorithm)
+* [Unfolding algorithm](#unfolding~algorithm)
 * [Deep unfolding SR network (USRNet)](#Deep)
 * [Visual results](#Visual)
 * [Approximated bicubic kernel under classical SR degradation model assumption](#Approximated)
