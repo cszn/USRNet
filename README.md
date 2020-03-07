@@ -4,6 +4,13 @@ _[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich
 
 [paper]
 
+Contents
+----------
+
+* [Classical (traditional) SISR degradation model](#Classical)
+* [Motivation](#Motivation)
+* [Unfolding algorithm](#Unfolding)
+* [Generalizability](#Generalizability)
 
 Classical (traditional) SISR degradation model
 ----------
