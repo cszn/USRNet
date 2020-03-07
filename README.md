@@ -4,12 +4,12 @@ USRNet can handle super-resolution (x2, x3 and x4) and deblurring for various bl
 
 Classical (traditional) SISR degradation model
 ----------
-<img src="figs/classical_degradation_model.png" width="500px"/> 
+<img src="figs/classical_degradation_model.png" width="440px"/> 
 
 
 Motivation
 ----------
-<img src="figs/fig1.png" width="500px"/>
+<img src="figs/fig1.png" width="440px"/>
 
 
 While the classical degradation model can result in various LR images for an HR image, with different blur kernels, scale factors and noise, the study of learning a single end-to-end trained deep model to invert all such LR images to HR image is still lacking.
@@ -18,9 +18,9 @@ While the classical degradation model can result in various LR images for an HR 
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
-<img src="figs/bicubic_kernelx2.png" width="500px"/> 
-<img src="figs/bicubic_kernelx3.png" width="500px"/> 
-<img src="figs/bicubic_kernelx4.png" width="500px"/>
+<img src="figs/bicubic_kernelx2.png" width="450px"/> 
+<img src="figs/bicubic_kernelx3.png" width="450px"/> 
+<img src="figs/bicubic_kernelx4.png" width="450px"/>
 
 
 
