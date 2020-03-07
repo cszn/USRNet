@@ -49,9 +49,9 @@ We proposes an end-to-end trainable unfolding network which leverages both learn
 methods and model-based methods. 
 
 
-USRNet inherits the flexibility of model-based methods to super-resolve
-blurry, noisy images for different scale factors via a single
-model, while maintaining the advantages of learning-based methods.
+USRNet inherits the `flexibility of model-based methods` to super-resolve
+blurry, noisy images for different scale factors via `a single
+model`, while maintaining the `advantages of learning-based methods`.
 
 #TODO
 
