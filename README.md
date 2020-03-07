@@ -9,7 +9,7 @@ Classical (traditional) SISR degradation model
 
 Motivation
 ----------
-<img src="figs/category.png" width="450px"/>
+<img src="figs/category.png" width="538px"/>
 
 ```
 [1] "Learning deep CNN denoiser prior for image restoration." CVPR, 2017.
