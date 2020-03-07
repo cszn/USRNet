@@ -1,6 +1,6 @@
 # USRNet
 
-USRNet can handle super-resolution (x2, x3 and x4) and deblurring for various blur kernels via a single model!
+USRNet can handle super-resolution (x2, x3 and x4) and `deblurring` for various blur kernels via `a single model`!
 
 Classical (traditional) SISR degradation model
 ----------
@@ -12,9 +12,16 @@ Motivation
 <img src="figs/fig1.png" width="440px"/>
 
 
-While the classical degradation model can result in various LR images for an HR image, with different blur kernels, scale factors and noise, the study of learning a single end-to-end trained deep model to invert all such LR images to HR image is still lacking.
+While the classical degradation model can result in various LR images for an HR image, with different blur kernels, scale factors and noise, the study of learning `a single end-to-end trained deep model` to invert all such LR images to HR image is still lacking.
 
+Unfolding algorithm
+----------
+#TODO
 
+Deep unfolding SR network (USRNet)
+----------
+
+#TODO
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
