@@ -9,10 +9,18 @@ Classical (traditional) SISR degradation model
 
 Motivation
 ----------
+<img src="figs/category.png" width="450px"/>
+
+```
+[1] "Learning deep CNN denoiser prior for image restoration." CVPR, 2017.
+[2] "Deep plug-and-play super-resolution for arbitrary blur kernels." CVPR, 2019.
+```
+
 <img src="figs/fig1.png" width="440px"/>
 
 
-While the classical degradation model can result in various LR images for an HR image, with different blur kernels, scale factors and noise, the study of learning `a single end-to-end trained deep model` to invert all such LR images to HR image is still lacking.
+While the classical degradation model can result in various LR images for an HR image, with different blur kernels, scale factors and noise, the study of learning *`a single end-to-end trained deep model`* to invert all such LR images to HR image is still lacking.
+
 
 Unfolding algorithm
 ----------
