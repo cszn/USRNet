@@ -126,15 +126,15 @@ Real image SR
 ----------
 <img src="figs/chip.png" width="88px"/> `LR image, 108x52`
 
-<img src="figs/chip_x1.png" width="88px"/> `USRNet(x1), deblurring`
+<img src="figs/chip_x1.png" width="88px"/> `USRNet(x1), deblurring, 108x52`
 
-<img src="figs/chip_x2.png" width="176px"/> `USRNet(x2)`
+<img src="figs/chip_x2.png" width="176px"/> `USRNet(x2), 216x104`
 
-<img src="figs/chip_x3.png" width="264px"/> `USRNet(x3)`
+<img src="figs/chip_x3.png" width="264px"/> `USRNet(x3), 324x156`
 
-<img src="figs/chip_x4.png" width="352px"/> `USRNet(x4)`
+<img src="figs/chip_x4.png" width="352px"/> `USRNet(x4), 432x208`
 
-<img src="figs/chip_x5.png" width="440px"/> `USRNet(x5)`
+<img src="figs/chip_x5.png" width="440px"/> `USRNet(x5), 540x260`
 
 <img src="figs/chip.png" width="440x"/> `Zoomed LR image`
 
