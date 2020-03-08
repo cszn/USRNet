@@ -171,8 +171,6 @@ The above results are obtained via `a single USRNet model` by setting different 
 
 <img src="figs/butterfly.bmp" width="440x"/> `Zoomed LR image, 256x256`
 
-<img src="figs/butterfly_x2.bmp" width="440x"/> `USRNet(x2), 512x512`
-
 <img src="figs/butterfly_x3.bmp" width="440x"/> `USRNet(x3), 768x768`
 
 <img src="figs/comic.png" width="440x"/> `Zoomed LR image, 250x361`
