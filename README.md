@@ -52,6 +52,14 @@ learning-based methods (e.g., SRMD [3]) generally lack such flexibility.
 While the classical degradation model can result in various LR images for an HR image, with different blur kernels, scale factors and noise, the study of learning *`a single end-to-end trained deep model`* to invert all such LR images to HR image is still lacking.
 
 
+**This work focuses on non-blind SISR which assumes the LR image, scale factor, blur kernel and noise level are known beforehand. In fact, non-blind SISR is still an active research direction.**  
+* _First, the blur kernel and noise level can be estimated, or are known based on other information (e.g.,
+camera setting)._
+* _Second, users can control the preference of sharpness and smoothness by tuning the blur kernel and
+noise level._ 
+* _Third, non-blind SISR can be an intermediate step towards solving blind SISR._
+
+
 Unfolding algorithm
 ----------
 By unfolding the MAP inference via a half-quadratic splitting
