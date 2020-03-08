@@ -23,6 +23,9 @@ Classical SISR degradation model
 ----------
 <img src="figs/classical_degradation_model.png" width="440px"/> 
 
+```
+Note: The above degradation model turns into a special case for deblurring when s=1.
+```
 
 Motivation
 ----------
