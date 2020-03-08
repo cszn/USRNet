@@ -117,11 +117,11 @@ Approximated bicubic kernel under classical SR degradation model assumption
 
 Visual results
 ----------
-<img src="figs/test_50_x4_k81.png" width="50px"/> <img src="figs/test_50_k8_s4_mse.png" width="200px"/> <img src="figs/test_50_k8_s4_gan.png" width="200px"/> 
+<img src="figs/test_50_x4_k81.png" width="49px"/> <img src="figs/test_50_k8_s4_mse.png" width="196px"/> <img src="figs/test_50_k8_s4_gan.png" width="196px"/> 
 
-<img src="figs/test_36_L1.png" width="50px"/> <img src="figs/test_36_k1_s4_mse.png" width="200px"/> <img src="figs/test_36_k1_s4_gan.png" width="200px"/> 
+<img src="figs/test_36_L1.png" width="49px"/> <img src="figs/test_36_k1_s4_mse.png" width="196px"/> <img src="figs/test_36_k1_s4_gan.png" width="196px"/> 
 
-<img src="figs/test_18_x4_k121.png" width="50px"/> <img src="figs/test_18_k12_s4_mse.png" width="200px"/> <img src="figs/test_18_k12_s4_gan.png" width="200px"/> 
+<img src="figs/test_18_x4_k121.png" width="49px"/> <img src="figs/test_18_k12_s4_mse.png" width="196px"/> <img src="figs/test_18_k12_s4_gan.png" width="196px"/> 
 
 From left to right: `LR image`; `result of USRNet(x4)`; `result of USRGAN(x4)`
 
