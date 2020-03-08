@@ -102,9 +102,11 @@ Blur kernels
 * **Anisotropic Gaussian kernels**
 <img src="figs/anisotropic_gaussian.gif" width="450px"/> 
 
-* **Motio blur kernels**
+* **Motion blur kernels**
+<img src="figs/motion.gif" width="450px"/> 
 
-#TODO
+While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
+can handle more complex blur kernels would be a preferred choice in real applications.
 
 
 Approximated bicubic kernel under classical SR degradation model assumption
