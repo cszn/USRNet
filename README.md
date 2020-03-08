@@ -12,8 +12,9 @@ ___________
 * [Deep unfolding SR network](#deep-unfolding-sr-network)
 * [Models](#models)
 * [Codes](#codes)
-* [Visual results](#visual-results)
+* [Blur kernels](#blur-kernels)
 * [Approximated bicubic kernel under classical SR degradation model assumption](#approximated-bicubic-kernel-under-classical-sr-degradation-model-assumption)
+* [Visual results](#visual-results)
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
 * [Real image SR](#real-image-sr)
@@ -91,11 +92,21 @@ Models
 
 Codes
 ----------
+#TODO
 
 Blur kernels
 ----------
 * **Isotropic Gaussian kernels**
 <img src="figs/isotropic_gaussian.gif" width="450px"/> 
+
+* **Anisotropic Gaussian kernels**
+
+#TODO
+
+* **Motio blur kernels**
+
+#TODO
+
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
