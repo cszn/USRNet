@@ -100,8 +100,7 @@ Blur kernels
 <img src="figs/isotropic_gaussian.gif" width="450px"/> 
 
 * **Anisotropic Gaussian kernels**
-
-#TODO
+<img src="figs/anisotropic_gaussian.gif" width="450px"/> 
 
 * **Motio blur kernels**
 
