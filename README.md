@@ -92,7 +92,17 @@ Models
 Codes
 ----------
 
-#TODO
+Blur kernels
+----------
+* **Isotropic Gaussian kernels**
+<img src="figs/isotropic_gaussian.gif" width="450px"/> 
+
+Approximated bicubic kernel under classical SR degradation model assumption
+----------
+<img src="figs/bicubic_kernelx2.png" width="450px"/> 
+<img src="figs/bicubic_kernelx3.png" width="450px"/> 
+<img src="figs/bicubic_kernelx4.png" width="450px"/>
+
 
 Visual results
 ----------
@@ -104,11 +114,7 @@ Visual results
 
 From left to right: `LR image`; `result of USRNet(x4)`; `result of USRGAN(x4)`
 
-Approximated bicubic kernel under classical SR degradation model assumption
-----------
-<img src="figs/bicubic_kernelx2.png" width="450px"/> 
-<img src="figs/bicubic_kernelx3.png" width="450px"/> 
-<img src="figs/bicubic_kernelx4.png" width="450px"/>
+
 
 Results on bicubicly degradated LR images
 ----------
