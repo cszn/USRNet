@@ -163,17 +163,17 @@ Real image SR
 
 <img src="figs/chip_x4.png" width="352px"/> `USRNet(x4), 432x208`
 
-<img src="figs/chip_x5.png" width="432px"/> `USRNet(x5), 540x260`
+<img src="figs/chip_x5.png" width="430px"/> `USRNet(x5), 540x260`
 
-<img src="figs/chip.png" width="432x"/> `Zoomed LR image`
+<img src="figs/chip.png" width="430x"/> `Zoomed LR image`
 
 The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4, x5) and Gaussian blur kernels (with width 0.6, 1.0, 1.8, 2.4, 3).
 
-<img src="figs/butterfly.bmp" width="432x"/> <img src="figs/butterfly_x3.bmp" width="432x"/>
+<img src="figs/butterfly.bmp" width="430x"/> <img src="figs/butterfly_x3.bmp" width="430x"/>
 
 From left to right: `Zoomed real LR image Butterfly, 256x256`; `USRNet(x3), 768x768`
 
-<img src="figs/comic.png" width="432x"/> <img src="figs/comic_x2.png" width="432x"/> 
+<img src="figs/comic.png" width="430x"/> <img src="figs/comic_x2.png" width="430x"/> 
 
 From left to right: `Zoomed real LR image Comic, 250x361`; `USRNet(x2), 500x722`
 
