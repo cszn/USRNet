@@ -143,11 +143,11 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 
 * Visual results of USRGAN for bicubic degradation
 
-<img src="figs/test_19_x4_k1_L1.png" width="120px"/> <img src="figs/test_19_x4_k1_E.png" width="480px"/> 
+<img src="figs/test_19_x4_k1_L1.png" width="120px"/> <img src="figs/test_19_x4.png" width="480px"/> 
 
-<img src="figs/test_35_x4_k1_L.png" width="120px"/> <img src="figs/test_35_x4_k1_E.png" width="480px"/> 
+<img src="figs/test_35_x4_k1_L.png" width="120px"/> <img src="figs/test_35_x4.png" width="480px"/> 
 
-<img src="figs/test_42_x4_k1_L.png" width="120px"/> <img src="figs/test_42_x4_k1_E.png" width="480px"/> 
+<img src="figs/test_42_x4_k1_L.png" width="120px"/> <img src="figs/test_42_x4.png" width="480px"/> 
 
 From left to right: `LR image`; `result of USRGAN(x4)`
 
