@@ -153,21 +153,19 @@ Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well 
 
 Real image SR
 ----------
-<img src="figs/chip.png" width="88px"/> `LR image, 108x52`
+<img src="figs/chip.png" width="108px"/> `LR image, 108x52`
 
-<img src="figs/chip_x1.png" width="88px"/> `USRNet(x1), deblurring, 108x52`
+<img src="figs/chip_x1.png" width="108px"/> `USRNet(x1), deblurring, 108x52`
 
-<img src="figs/chip_x2.png" width="176px"/> `USRNet(x2), 216x104`
+<img src="figs/chip_x2.png" width="216px"/> `USRNet(x2), 216x104`
 
-<img src="figs/chip_x3.png" width="264px"/> `USRNet(x3), 324x156`
+<img src="figs/chip_x3.png" width="324px"/> `USRNet(x3), 324x156`
 
-<img src="figs/chip_x4.png" width="352px"/> `USRNet(x4), 432x208`
-
-<img src="figs/chip_x5.png" width="430px"/> `USRNet(x5), 540x260`
+<img src="figs/chip_x4.png" width="430px"/> `USRNet(x4), 432x208`
 
 <img src="figs/chip.png" width="430x"/> `Zoomed LR image`
 
-The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4, x5) and Gaussian blur kernels (with width 0.6, 1.0, 1.8, 2.4, 3).
+The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.55, 0.9, 1.7, 2.2).
 
 <img src="figs/butterfly.bmp" width="430x"/> <img src="figs/butterfly_x3.bmp" width="430x"/>
 
