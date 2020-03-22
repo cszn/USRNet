@@ -167,9 +167,9 @@ Real image SR
 
 The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.6, 0.9, 1.7, 2.2).
 
-<img src="figs/butterfly.bmp" width="430x"/> <img src="figs/butterfly_x3.bmp" width="430x"/>
+<img src="figs/butterfly.bmp" width="430x"/> <img src="figs/butterfly_x2.bmp" width="430x"/>
 
-From left to right: `Zoomed real LR image Butterfly, 256x256`; `USRNet(x3), 768x768`
+From left to right: `Zoomed real LR image Butterfly, 256x256`; `USRNet(x2), 512x512`
 
 <img src="figs/comic.png" width="430x"/> <img src="figs/comic_x2.png" width="430x"/> 
 
