@@ -131,6 +131,18 @@ From left to right: `LR image`; `result of USRNet(x4)`; `result of USRGAN(x4)`
 
 Results on bicubicly degradated LR images
 ----------
+By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achieve very promising results for bicubic degradation. Note that the bicubic kernels are not adopted in training.
+
+* PSNR results of USRNet for bicubic degradation
+
+| Model |  Scale factor | Set5 | Set14 | BSD100 | Urban100 |
+|---|---|---|---|---|---|
+|       | x2 |  37.72  | 33.49  |  32.10  | 31.79  |
+|USRNet | x3 |  34.45  | 30.51  |  29.18  | 28.38  |
+|       | x4 |  32.45  | 28.83  |  27.69  | 26.44  |
+
+* Visual results of USRGAN for bicubic degradation
+
 <img src="figs/test_19_x4_k1_L1.png" width="120px"/> <img src="figs/test_19_x4_k1_E.png" width="480px"/> 
 
 <img src="figs/test_35_x4_k1_L.png" width="120px"/> <img src="figs/test_35_x4_k1_E.png" width="480px"/> 
