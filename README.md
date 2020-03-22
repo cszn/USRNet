@@ -165,7 +165,7 @@ Real image SR
 
 <img src="figs/chip.png" width="430x"/> `Zoomed LR image`
 
-The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.55, 0.9, 1.7, 2.2).
+The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.6, 0.9, 1.7, 2.2).
 
 <img src="figs/butterfly.bmp" width="430x"/> <img src="figs/butterfly_x3.bmp" width="430x"/>
 
