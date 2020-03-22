@@ -73,13 +73,14 @@ Deep unfolding SR network
 ----------
 We proposes an end-to-end trainable unfolding network which leverages both learning-based
 methods and model-based methods. 
-
-
 USRNet inherits the `flexibility of model-based methods` to super-resolve
 blurry, noisy images for different scale factors via `a single
 model`, while maintaining the `advantages of learning-based methods`.
 
-#TODO
+<img src="figs/architecture.png" width="900px"/> 
+
+The overall architecture of the proposed USRNet with 8 iterations. USRNet can flexibly handle the classical degradation
+via `a single model` as it takes the LR image, scale factor, blur kernel and noise level as input. Specifically, USRNet consists of three main modules, including the `data module D` that makes HR estimation clearer, the `prior module P` that makes HR estimation cleaner, and the `hyper-parameter module H` that controls the outputs of D and P.
 
 Models
 ----------
