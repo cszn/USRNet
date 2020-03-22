@@ -154,12 +154,12 @@ From left to right: `LR image`; `result of USRGAN(x4)`
 
 Generalizability
 ----------
-<img src="figs/g1_LR.png" width="150px"/> <img src="figs/g1_HR.png" width="450px"/> 
+<img src="figs/g1_LR.png" width="150px"/> <img src="figs/g1_E.png" width="450px"/> 
 
 `(a) Result of USRNet(x3) for kernel size 67x67`  
 Even trained with kernel size 25x25, USRNet generalizes well to much larger kernel size.
 
-<img src="figs/g2_LR.png" width="150px"/> <img src="figs/g2_HR.png" width="450px"/> 
+<img src="figs/g2_LR.png" width="150px"/> <img src="figs/g2_E.png" width="450px"/> 
 
 `(b) Result of USRGAN(x3) for kernel size 70x70`  
 Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well to much larger kernel size and another scale factor 3.
