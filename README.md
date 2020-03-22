@@ -84,11 +84,12 @@ model`, while maintaining the `advantages of learning-based methods`.
 Models
 ----------
 
-- USRNet
-
-- USRGAN
-
-- USRNet-tiny
+|Model|# iters|# params|ResUNet|
+|---|---|---|---|
+|USRNet     | 8 | 17.02M |64-128-256-512|
+|USRGAN     | 8 | 17.02M |64-128-256-512|
+|USRNet-tiny| 6 | 0.59M  |16-32-64-64   |
+|USRGAN-tiny| 6 | 0.59M  |16-32-64-64   |
 
 Codes
 ----------
