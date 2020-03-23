@@ -20,6 +20,8 @@ ___________
 * [Real image SR](#real-image-sr)
 * [References](#references)
 
+
+
 Classical SISR degradation model
 ----------
 <img src="figs/classical_degradation_model.png" width="440px"/> 
@@ -27,6 +29,8 @@ Classical SISR degradation model
 ```
 Note: The above degradation model turns into a special case for deblurring when s=1.
 ```
+
+
 
 Motivation
 ----------
@@ -61,6 +65,7 @@ noise level._
 * _Third, non-blind SISR can be an intermediate step towards solving blind SISR._
 
 
+
 Unfolding algorithm
 ----------
 By unfolding the MAP inference via a half-quadratic splitting
@@ -68,6 +73,8 @@ algorithm, a fixed number of iterations consisting of alternately solving a `dat
 can be obtained.
 
 #TODO
+
+
 
 Deep unfolding SR network
 ----------
@@ -82,6 +89,8 @@ model`, while maintaining the `advantages of learning-based methods`.
 The overall architecture of the proposed USRNet with 8 iterations. USRNet can flexibly handle the classical degradation
 via `a single model` as it takes the LR image, scale factor, blur kernel and noise level as input. Specifically, USRNet consists of three main modules, including the `data module D` that makes HR estimation clearer, the `prior module P` that makes HR estimation cleaner, and the `hyper-parameter module H` that controls the outputs of D and P.
 
+
+
 Models
 ----------
 
@@ -92,9 +101,13 @@ Models
 |USRNet-tiny| 6 | 0.59M  |16-32-64-64   |
 |USRGAN-tiny| 6 | 0.59M  |16-32-64-64   |
 
+
+
 Codes
 ----------
 #TODO
+
+
 
 Blur kernels
 ----------
@@ -108,10 +121,12 @@ can handle more complex blur kernels would be a preferred choice in real applica
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
-The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. The approximated bicubic kernels for scale factors 2, 3 and 4 are shown in the following. Note that these kernels contain negative values.
-
 |<img src="figs/bicubic_kernelx2.png" width="285px"/>|<img src="figs/bicubic_kernelx3.png" width="285px"/>|<img src="figs/bicubic_kernelx4.png" width="285px"/>|
 |---|---|---|
+
+The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. Note that the bicubic kernels contain negative values.
+
+
 
 Visual results
 ----------
@@ -148,6 +163,7 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 From left to right: `LR image`; `result of USRGAN(x4)`
 
 
+
 Generalizability
 ----------
 <img src="figs/g1_LR.png" width="150px"/> <img src="figs/g1_E.png" width="450px"/> 
@@ -159,6 +175,8 @@ Even trained with kernel size 25x25, USRNet generalizes well to much larger kern
 
 `(b) Result of USRGAN(x3) for kernel size 70x70`  
 Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well to much larger kernel size and another scale factor 3.
+
+
 
 Real image SR
 ----------
@@ -176,6 +194,8 @@ The above results are obtained via `a single USRNet model` by setting different 
 |<img src="figs/comic.png" width="430x"/>|<img src="figs/comic_x2.png" width="430x"/>| 
 |---|---|
 |`Zoomed real LR image Comic, 250x361`| `Result of USRNet(x2), 500x722`|
+
+
 
 References
 ----------
