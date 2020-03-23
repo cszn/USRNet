@@ -14,6 +14,7 @@ ___________
 * [Codes](#codes)
 * [Blur kernels](#blur-kernels)
 * [Approximated bicubic kernel under classical SR degradation model assumption](#approximated-bicubic-kernel-under-classical-sr-degradation-model-assumption)
+* [PSNR results](#psnr-results)
 * [Visual results](#visual-results)
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
@@ -126,6 +127,12 @@ Approximated bicubic kernel under classical SR degradation model assumption
 
 The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. Note that the bicubic kernels contain negative values.
 
+
+PSNR results
+-----------
+<img src="figs/psnr.png" width="900px"/>
+
+The table shows the average PSNR(dB) results of different methods for different combinations of scale factors, blur kernels and noise levels.
 
 
 Visual results
