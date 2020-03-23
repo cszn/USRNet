@@ -114,7 +114,7 @@ Blur kernels
 ----------
 |<img src="figs/isotropic_gaussian.gif" width="285px"/>|<img src="figs/anisotropic_gaussian.gif" width="285px"/>|<img src="figs/motion.gif" width="285px"/>|
 |---|---|---|
-|(a) Isotropic Gaussian kernels|(b) Anisotropic Gaussian kernels |(c) Motion blur kernels |
+|<p align="center">(a) Isotropic Gaussian kernels</p>|<p align="center">(b) Anisotropic Gaussian kernels</p> |<p align="center">(c) Motion blur kernels</p> |
 
 While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
 can handle more complex blur kernels would be a preferred choice in real applications.
@@ -130,8 +130,7 @@ The bicubic degradation can be approximated by setting a proper blur kernel for 
 
 PSNR results
 -----------
-<img src="figs/psnr.png" width="900px"/>
-
+<img src="figs/psnr.png" width="900px"/>  
 The table shows the average PSNR(dB) results of different methods for different combinations of scale factors, blur kernels and noise levels.
 
 
@@ -155,9 +154,9 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 
 | Model |  Scale factor | Set5 | Set14 | BSD100 | Urban100 |
 |---|---|---|---|---|---|
-|       | x2 |  37.72  | 33.49  |  32.10  | 31.79  |
-|USRNet | x3 |  34.45  | 30.51  |  29.18  | 28.38  |
-|       | x4 |  32.45  | 28.83  |  27.69  | 26.44  |
+|       | <p align="center">x2</p> |  37.72  | 33.49  |  32.10  | 31.79  |
+|USRNet | <p align="center">x3</p> |  34.45  | 30.51  |  29.18  | 28.38  |
+|       | <p align="center">x4</p> |  32.45  | 28.83  |  27.69  | 26.44  |
 
 * Visual results of USRGAN for bicubic degradation
 
@@ -196,11 +195,11 @@ The above results are obtained via `a single USRNet model` by setting different 
 
 |<img src="figs/butterfly.bmp" width="430x"/> |<img src="figs/butterfly_x2.bmp" width="430x"/>|
 |---|---|
-|`Zoomed real LR image Butterfly, 256x256`| `Result of USRNet(x2), 512x512`|
+|<p align="center">`Zoomed real LR image Butterfly, 256x256`</p>| <p align="center">`Result of USRNet(x2), 512x512`</p>|
 
 |<img src="figs/comic.png" width="430x"/>|<img src="figs/comic_x2.png" width="430x"/>| 
 |---|---|
-|`Zoomed real LR image Comic, 250x361`| `Result of USRNet(x2), 500x722`|
+|<p align="center">`Zoomed real LR image Comic, 250x361`</p>| <p align="center">`Result of USRNet(x2), 500x722`</p>|
 
 
 
