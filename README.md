@@ -98,9 +98,9 @@ Codes
 
 Blur kernels
 ----------
-<img src="figs/isotropic_gaussian.gif" width="285px"/> <img src="figs/anisotropic_gaussian.gif" width="285px"/> <img src="figs/motion.gif" width="285px"/> 
-
-    From left to right: (a) Isotropic Gaussian kernels; (b) Anisotropic Gaussian kernels; (c) Motion blur kernels
+|<img src="figs/isotropic_gaussian.gif" width="285px"/>|<img src="figs/anisotropic_gaussian.gif" width="285px"/>|<img src="figs/motion.gif" width="285px"/>|
+|---|---|---|
+|(a) Isotropic Gaussian kernels|(b) Anisotropic Gaussian kernels |(c) Motion blur kernels |
 
 While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
 can handle more complex blur kernels would be a preferred choice in real applications.
@@ -110,8 +110,8 @@ Approximated bicubic kernel under classical SR degradation model assumption
 ----------
 The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. The approximated bicubic kernels for scale factors 2, 3 and 4 are shown in the following. Note that these kernels contain negative values.
 
-<img src="figs/bicubic_kernelx2.png" width="285px"/> <img src="figs/bicubic_kernelx3.png" width="285px"/> <img src="figs/bicubic_kernelx4.png" width="285px"/>
-
+|<img src="figs/bicubic_kernelx2.png" width="285px"/>|<img src="figs/bicubic_kernelx3.png" width="285px"/>|<img src="figs/bicubic_kernelx4.png" width="285px"/>|
+|---|---|---|
 
 Visual results
 ----------
