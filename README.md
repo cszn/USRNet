@@ -88,8 +88,11 @@ model`, while maintaining the `advantages of learning-based methods`.
 <img src="figs/architecture.png" width="900px"/> 
 
 The overall architecture of the proposed USRNet with 8 iterations. USRNet can flexibly handle the classical degradation
-via `a single model` as it takes the LR image, scale factor, blur kernel and noise level as input. Specifically, USRNet consists of three main modules, including the `data module D` that makes HR estimation clearer, the `prior module P` that makes HR estimation cleaner, and the `hyper-parameter module H` that controls the outputs of D and P.
+via `a single model` as it takes the LR image, scale factor, blur kernel and noise level as input. Specifically, USRNet consists of three main modules, including the _**data module D**_ that makes HR estimation clearer, the _**prior module P**_ that makes HR estimation cleaner, and the _**hyper-parameter module H**_ that controls the outputs of _**D**_ and _**P**_.
 
+* **_Data module D:_** _closed-form solution for the data term; contains no trainable parameters_
+* **_Prior module P:_** _ResUNet denoiser for the prior term_
+* **_Hyper-parameter module H:_** _MLP for the hyper-parameter; acts as a slide bar to control the outputs of **D** and **P**_
 
 
 Models
