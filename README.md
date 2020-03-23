@@ -19,7 +19,7 @@ ___________
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
 * [Real image SR](#real-image-sr)
-* [References](#references)
+* [Citation](#citation)
 
 
 
@@ -204,7 +204,7 @@ The above results are obtained via `a single USRNet model` by setting different 
 
 
 
-References
+Citation
 ----------
 ```
 @inproceedings{zhang2020deep, % USRNet
