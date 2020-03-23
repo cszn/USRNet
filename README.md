@@ -108,6 +108,8 @@ can handle more complex blur kernels would be a preferred choice in real applica
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
+The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. The approximated bicubic kernels for scale factors 2, 3 and 4 are shown in the following. Note that these kernels contain negative values.
+
 <img src="figs/bicubic_kernelx2.png" width="285px"/> <img src="figs/bicubic_kernelx3.png" width="285px"/> <img src="figs/bicubic_kernelx4.png" width="285px"/>
 
 
