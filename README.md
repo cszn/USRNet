@@ -98,14 +98,9 @@ Codes
 
 Blur kernels
 ----------
-* **Isotropic Gaussian kernels**
-<img src="figs/isotropic_gaussian.gif" width="450px"/> 
+<img src="figs/isotropic_gaussian.gif" width="285px"/> <img src="figs/anisotropic_gaussian.gif" width="285px"/> <img src="figs/motion.gif" width="285px"/> 
 
-* **Anisotropic Gaussian kernels**
-<img src="figs/anisotropic_gaussian.gif" width="450px"/> 
-
-* **Motion blur kernels**
-<img src="figs/motion.gif" width="450px"/> 
+    From left to right: (a) Isotropic Gaussian kernels; (b) Anisotropic Gaussian kernels; (c) Motion blur kernels
 
 While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
 can handle more complex blur kernels would be a preferred choice in real applications.
@@ -113,9 +108,7 @@ can handle more complex blur kernels would be a preferred choice in real applica
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
-<img src="figs/bicubic_kernelx2.png" width="450px"/> 
-<img src="figs/bicubic_kernelx3.png" width="450px"/> 
-<img src="figs/bicubic_kernelx4.png" width="450px"/>
+<img src="figs/bicubic_kernelx2.png" width="285px"/> <img src="figs/bicubic_kernelx3.png" width="285px"/> <img src="figs/bicubic_kernelx4.png" width="285px"/>
 
 
 Visual results
