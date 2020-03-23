@@ -214,5 +214,4 @@ References
   pages={0--0},
   year={2020}
 }
-
 ```
