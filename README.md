@@ -114,7 +114,7 @@ Blur kernels
 ----------
 |<img src="figs/isotropic_gaussian.gif" width="285px"/>|<img src="figs/anisotropic_gaussian.gif" width="285px"/>|<img src="figs/motion.gif" width="285px"/>|
 |---|---|---|
-|<p align="center">(a) Isotropic Gaussian kernels</p>|<p align="center">(b) Anisotropic Gaussian kernels</p> |<p align="center">(c) Motion blur kernels</p> |
+|<p align="center">  (a) Isotropic Gaussian kernels  </p>|<p align="center">  (b) Anisotropic Gaussian kernels  </p> |<p align="center">  (c) Motion blur kernels  </p> |
 
 While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
 can handle more complex blur kernels would be a preferred choice in real applications.
@@ -154,9 +154,9 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 
 | Model |  Scale factor | Set5 | Set14 | BSD100 | Urban100 |
 |---|---|---|---|---|---|
-|       | <p align="center">x2</p> |  37.72  | 33.49  |  32.10  | 31.79  |
-|USRNet | <p align="center">x3</p> |  34.45  | 30.51  |  29.18  | 28.38  |
-|       | <p align="center">x4</p> |  32.45  | 28.83  |  27.69  | 26.44  |
+|       | x2 |  37.72  | 33.49  |  32.10  | 31.79  |
+|USRNet | x3 |  34.45  | 30.51  |  29.18  | 28.38  |
+|       | x4 |  32.45  | 28.83  |  27.69  | 26.44  |
 
 * Visual results of USRGAN for bicubic degradation
 
