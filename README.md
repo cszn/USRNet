@@ -189,20 +189,19 @@ Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well 
 
 Real image SR
 ----------
-| `LR` |`USRNet(x1)`|`USRNet(x2)`|`USRNet(x3)` | `USRNet(x4)` |
-|---|---|---|---|---|
 | <img src="figs/chip.png" width="75px"/>|<img src="figs/chip_x1.png" width="75px"/> |<img src="figs/chip_x2.png" width="150px"/> | <img src="figs/chip_x3.png" width="225px"/>|<img src="figs/chip_x4.png" width="300px"/>|
-|`108x52`|`108x52`|`216x104`|`324x156`|`432x208`|
+|---|---|---|---|---|
+|`LR`|`USRNet(x1)`|`USRNet(x2)`|`USRNet(x3)`|`USRNet(x4)`|
 
 The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.6, 0.9, 1.7, 2.2).
 
 |<img src="figs/butterfly.bmp" width="430x"/> |<img src="figs/butterfly_x2.bmp" width="430x"/>|
 |---|---|
-|<p align="center">`Zoomed real LR image Butterfly, 256x256`</p>| <p align="center">`Result of USRNet(x2), 512x512`</p>|
+|`Zoomed real LR image Butterfly, 256x256`|`USRNet(x2), 512x512`|
 
 |<img src="figs/comic.png" width="430x"/>|<img src="figs/comic_x2.png" width="430x"/>| 
 |---|---|
-|<p align="center">`Zoomed real LR image Comic, 250x361`</p>| <p align="center">`Result of USRNet(x2), 500x722`</p>|
+|`Zoomed real LR image Comic, 250x361`|`USRNet(x2), 500x722`|
 
 
 
