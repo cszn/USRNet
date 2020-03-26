@@ -119,7 +119,7 @@ Blur kernels
 
 |<img src="figs/isotropic_gaussian.gif" width="285px"/>|<img src="figs/anisotropic_gaussian.gif" width="285px"/>|<img src="figs/motion.gif" width="285px"/>|
 |:---:|:---:|:---:|
-|(a) Isotropic Gaussian kernels|(b) Anisotropic Gaussian kernels|(c) Motion blur kernels|
+|<i>(a) Isotropic Gaussian kernels</i>|<i>(b) Anisotropic Gaussian kernels</i>|<i>(c) Motion blur kernels</i>|
 
 While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
 can handle more complex blur kernels would be a preferred choice in real applications.
@@ -193,7 +193,7 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 
 <img src="figs/test_42_LR_x4.png" width="120px"/> <img src="figs/test_42_x4.png" width="480px"/> 
 
-From left to right: <i>(a) LR images via bicubic degradation</i>; <i>(b) results by USRGAN(x4)</i>
+<i>(a) LR images via bicubic degradation</i>; <i>(b) results by USRGAN(x4)</i>
 
 
 
@@ -202,13 +202,13 @@ Generalizability
 
 <img src="figs/g1_LR.png" width="150px"/> <img src="figs/g1_E.png" width="450px"/> 
 
-<i>(a) Result of USRNet(x3) for kernel size 67x67</i>
+<i>(a) LR image with kernel size 67x67; (b) result by USRNet(x3)</i>
 
 _**Even trained with kernel size 25x25, USRNet generalizes well to much larger kernel size.**_
 
 <img src="figs/g2_LR.png" width="150px"/> <img src="figs/g2_E.png" width="450px"/> 
 
-<i>(b) Result of USRGAN(x3) for kernel size 70x70</i>  
+<i>(a) LR image with kernel size 70x70; (b) result by USRGAN(x3)</i>  
 
 _**Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well to much larger kernel size and another scale factor 3.**_
 
