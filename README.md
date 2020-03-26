@@ -15,7 +15,7 @@ ___________
 * [Blur kernels](#blur-kernels)
 * [Approximated bicubic kernel under classical SR degradation model assumption](#approximated-bicubic-kernel-under-classical-sr-degradation-model-assumption)
 * [PSNR results](#psnr-results)
-* [Visual results](#visual-results)
+* [Visual results of USRGAN](#visual-results-of-usrgan)
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
 * [Real image SR](#real-image-sr)
@@ -137,13 +137,15 @@ PSNR results
 The table shows the average PSNR(dB) results of different methods for different combinations of scale factors, blur kernels and noise levels.
 
 
-Visual results
+Visual results of USRGAN
 ----------
-<img src="figs/test_50_x4_k81.png" width="70px"/> <img src="figs/test_50_k8_s4_mse.png" width="264px"/> <img src="figs/test_50_k8_s4_gan.png" width="264px"/> 
 
-<img src="figs/test_36_L1.png" width="70px"/> <img src="figs/test_36_k1_s4_mse.png" width="264px"/> <img src="figs/test_36_k1_s4_gan.png" width="264px"/> 
+<img src="figs/parrot_x4_k3_LR.png" width="284px"/> <img src="figs/parrot_x4_k6_LR.png" width="284px"/> <img src="figs/parrot_x4_k12_LR.png" width="284px"/>
 
-<img src="figs/test_18_x4_k121.png" width="70px"/> <img src="figs/test_18_k12_s4_mse.png" width="264px"/> <img src="figs/test_18_k12_s4_gan.png" width="264px"/> 
+<img src="figs/parrot_x4_k3_usrgan.png" width="284px"/> <img src="figs/parrot_x4_k6_usrgan.png" width="284px"/> <img src="figs/parrot_x4_k12_usrgan.png" width="284px"/>
+
+
+
 
 From left to right: `LR image`; `result of USRNet(x4)`; `result of USRGAN(x4)`
 
