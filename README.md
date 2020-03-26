@@ -99,7 +99,7 @@ Models
 ----------
 
 |Model|# iters|# params|ResUNet|
-|---|---|---|---|
+|---|:--:|:---:|:---:|
 |USRNet     | 8 | 17.02M |64-128-256-512|
 |USRGAN     | 8 | 17.02M |64-128-256-512|
 |USRNet-tiny| 6 | 0.59M  |16-32-64-64   |
@@ -116,8 +116,8 @@ Codes
 Blur kernels
 ----------
 |<img src="figs/isotropic_gaussian.gif" width="285px"/>|<img src="figs/anisotropic_gaussian.gif" width="285px"/>|<img src="figs/motion.gif" width="285px"/>|
-|---|---|---|
-|<p align="center">  (a) Isotropic Gaussian kernels  </p>|<p align="center">  (b) Anisotropic Gaussian kernels  </p> |<p align="center">  (c) Motion blur kernels  </p> |
+|:---:|:---:|:---:|
+|(a) Isotropic Gaussian kernels|(b) Anisotropic Gaussian kernels|(c) Motion blur kernels|
 
 While it has been pointed out that anisotropic Gaussian kernels are enough for SISR task, the SISR method that
 can handle more complex blur kernels would be a preferred choice in real applications.
@@ -126,7 +126,7 @@ can handle more complex blur kernels would be a preferred choice in real applica
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
 |<img src="figs/bicubic_kernelx2.png" width="285px"/>|<img src="figs/bicubic_kernelx3.png" width="285px"/>|<img src="figs/bicubic_kernelx4.png" width="285px"/>|
-|---|---|---|
+|:---:|:---:|:---:|
 
 The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. Note that the bicubic kernels contain negative values.
 
@@ -156,7 +156,7 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 * PSNR results of USRNet for bicubic degradation
 
 | Model |  Scale factor | Set5 | Set14 | BSD100 | Urban100 |
-|---|---|---|---|---|---|
+|---|:---:|:---:|:---:|:---:|:---:|
 |       | x2 |  37.72  | 33.49  |  32.10  | 31.79  |
 |USRNet | x3 |  34.45  | 30.51  |  29.18  | 28.38  |
 |       | x4 |  32.45  | 28.83  |  27.69  | 26.44  |
@@ -190,17 +190,17 @@ Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well 
 Real image SR
 ----------
 | <img src="figs/chip.png" width="75px"/>|<img src="figs/chip_x1.png" width="75px"/> |<img src="figs/chip_x2.png" width="150px"/> | <img src="figs/chip_x3.png" width="225px"/>|<img src="figs/chip_x4.png" width="300px"/>|
-|---|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|
 |`LR`|`USRNet(x1)`|`USRNet(x2)`|`USRNet(x3)`|`USRNet(x4)`|
 
 The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.6, 0.9, 1.7, 2.2).
 
 |<img src="figs/butterfly.bmp" width="430x"/> |<img src="figs/butterfly_x2.bmp" width="430x"/>|
-|---|---|
+|:---:|:---:|
 |`Zoomed real LR image Butterfly, 256x256`|`USRNet(x2), 512x512`|
 
 |<img src="figs/comic.png" width="430x"/>|<img src="figs/comic_x2.png" width="430x"/>| 
-|---|---|
+|:---:|:---:|
 |`Zoomed real LR image Comic, 250x361`|`USRNet(x2), 500x722`|
 
 
