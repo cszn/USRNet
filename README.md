@@ -115,6 +115,7 @@ Codes
 
 Blur kernels
 ----------
+
 |<img src="figs/isotropic_gaussian.gif" width="285px"/>|<img src="figs/anisotropic_gaussian.gif" width="285px"/>|<img src="figs/motion.gif" width="285px"/>|
 |:---:|:---:|:---:|
 |(a) Isotropic Gaussian kernels|(b) Anisotropic Gaussian kernels|(c) Motion blur kernels|
@@ -125,6 +126,7 @@ can handle more complex blur kernels would be a preferred choice in real applica
 
 Approximated bicubic kernel under classical SR degradation model assumption
 ----------
+
 |<img src="figs/bicubic_kernelx2.png" width="285px"/>|<img src="figs/bicubic_kernelx3.png" width="285px"/>|<img src="figs/bicubic_kernelx4.png" width="285px"/>|
 |:---:|:---:|:---:|
 
@@ -133,12 +135,14 @@ The bicubic degradation can be approximated by setting a proper blur kernel for 
 
 PSNR results
 -----------
+
 <img src="figs/psnr.png" width="900px"/>  
 The table shows the average PSNR(dB) results of different methods for different combinations of scale factors, blur kernels and noise levels.
 
 
 Visual results of USRGAN
 ----------
+
 <img align="left" src="figs/parrot_x4_k3_LR.png" width="291px"/>  <img align="center" src="figs/parrot_x4_k6_LR.png" width="291px"/>  <img align="right" src="figs/parrot_x4_k12_LR.png" width="291px"/>
 <p align="center"><i>(a) LR images</i></p>
 
@@ -158,6 +162,7 @@ Visual results of USRGAN
 
 Results on bicubicly degradated LR images
 ----------
+
 By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achieve very promising results for bicubic degradation. Note that the bicubic kernels are not adopted in training.
 
 * PSNR results of USRNet for bicubic degradation
@@ -170,26 +175,28 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 
 * Visual results of USRGAN for bicubic degradation
 
-<img src="figs/test_19_x4_k1_L1.png" width="120px"/> <img src="figs/test_19_x4.png" width="480px"/> 
+<img src="figs/test_19_LR_x4.png" width="120px"/> <img src="figs/test_19_x4.png" width="480px"/> 
 
-<img src="figs/test_35_x4_k1_L.png" width="120px"/> <img src="figs/test_35_x4.png" width="480px"/> 
+<img src="figs/test_35_LR_x4.png" width="120px"/> <img src="figs/test_35_x4.png" width="480px"/> 
 
-<img src="figs/test_42_x4_k1_L.png" width="120px"/> <img src="figs/test_42_x4.png" width="480px"/> 
+<img src="figs/test_42_LR_x4.png" width="120px"/> <img src="figs/test_42_x4.png" width="480px"/> 
 
-From left to right: `LR image`; `result of USRGAN(x4)`
+From left to right: <i>(a) LR images via bicubic degradation</i>; <i>(b) results by USRGAN(x4)</i>
 
 
 
 Generalizability
 ----------
+
 <img src="figs/g1_LR.png" width="150px"/> <img src="figs/g1_E.png" width="450px"/> 
 
-`(a) Result of USRNet(x3) for kernel size 67x67`  
+<i>(a) Result of USRNet(x3) for kernel size 67x67</i>
 Even trained with kernel size 25x25, USRNet generalizes well to much larger kernel size.
 
 <img src="figs/g2_LR.png" width="150px"/> <img src="figs/g2_E.png" width="450px"/> 
 
-`(b) Result of USRGAN(x3) for kernel size 70x70`  
+<i>(b) Result of USRGAN(x3) for kernel size 70x70</i>  
+
 Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes well to much larger kernel size and another scale factor 3.
 
 
@@ -198,17 +205,17 @@ Real image SR
 ----------
 | <img src="figs/chip.png" width="75px"/>|<img src="figs/chip_x1.png" width="75px"/> |<img src="figs/chip_x2.png" width="150px"/> | <img src="figs/chip_x3.png" width="225px"/>|<img src="figs/chip_x4.png" width="300px"/>|
 |:---:|:---:|:---:|:---:|:---:|
-|`LR`|`USRNet(x1)`|`USRNet(x2)`|`USRNet(x3)`|`USRNet(x4)`|
+|<i>LR</i>|<i>USRNet(x1)</i>|<i>USRNet(x2)</i>|<i>USRNet(x3)</i>|<i>USRNet(x4)</i>|
 
 The above results are obtained via `a single USRNet model` by setting different scale factors (x1, x2, x3, x4) and Gaussian blur kernels (with width 0.6, 0.9, 1.7, 2.2).
 
 |<img src="figs/butterfly.bmp" width="430x"/> |<img src="figs/butterfly_x2.bmp" width="430x"/>|
 |:---:|:---:|
-|`Zoomed real LR image Butterfly, 256x256`|`USRNet(x2), 512x512`|
+|<i>Zoomed real LR image Butterfly, 256x256</i>|<i>Result by USRNet(x2), 512x512</i>|
 
 |<img src="figs/comic.png" width="430x"/>|<img src="figs/comic_x2.png" width="430x"/>| 
 |:---:|:---:|
-|`Zoomed real LR image Comic, 250x361`|`USRNet(x2), 500x722`|
+|<i>Zoomed real LR image Comic, 250x361</i>|<i>Result by USRNet(x2), 500x722</i>|
 
 
 
