@@ -15,6 +15,7 @@ ___________
 * [Blur kernels](#blur-kernels)
 * [Approximated bicubic kernel under classical SR degradation model assumption](#approximated-bicubic-kernel-under-classical-sr-degradation-model-assumption)
 * [PSNR results](#psnr-results)
+* [Visual results of USRNet](#visual-results-of-usrnet)
 * [Visual results of USRGAN](#visual-results-of-usrgan)
 * [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
 * [Generalizability](#generalizability)
@@ -138,6 +139,17 @@ PSNR results
 
 <img src="figs/psnr.png" width="900px"/>  
 The table shows the average PSNR(dB) results of different methods for different combinations of scale factors, blur kernels and noise levels.
+
+
+Visual results of USRNet
+----------
+
+<img align="left" src="figs/butterfly_x2_k10_LR.png" width="291px"/>  <img align="center" src="figs/butterfly_x3_k2_LR.png" width="291px"/>  <img align="right" src="figs/butterfly_x4_k7_LR.png" width="291px"/>
+<p align="center"><i>(a) LR images with scale factors 2, 3 and 4</i></p>
+
+
+<img align="left" src="figs/butterfly_x2_k10_usrnet.png" width="291px"/> <img align="center" src="figs/butterfly_x3_k2_usrnet.png" width="291px"/> <img align="right" src="figs/butterfly_x4_k7_usrnet.png" width="291px"/>
+<p align="center"><i>(b) Results by the single USRNet model with s = 2, 3 and 4</i></p>
 
 
 Visual results of USRGAN
