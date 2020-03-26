@@ -139,7 +139,7 @@ The table shows the average PSNR(dB) results of different methods for different 
 
 Visual results of USRGAN
 ----------
-<p align="center"> <img src="figs/parrot_x4_k3_LR.png" width="288px"/>  <img src="figs/parrot_x4_k6_LR.png" width="288px"/>  <img src="figs/parrot_x4_k12_LR.png" width="288px"/> </p>
+<img align="left" src="figs/parrot_x4_k3_LR.png" width="288px"/>  <img align="center" src="figs/parrot_x4_k6_LR.png" width="288px"/>  <img align="right" src="figs/parrot_x4_k12_LR.png" width="288px"/>
 <p align="center"><i> (a) LR images </i></p>
 
 <img src="figs/parrot_x4_k3_usrgan.png" width="288px"/> <img src="figs/parrot_x4_k6_usrgan.png" width="288px"/> <img src="figs/parrot_x4_k12_usrgan.png" width="288px"/>
