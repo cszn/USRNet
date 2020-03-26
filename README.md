@@ -147,10 +147,11 @@ Visual results of USRGAN
 <p align="center"><i>(b) Results by USRGAN(x4)</i></p>
 
 
-|<img align="center" src="figs/test_27_x4_k3_LR.png" width="446px"/> | <img align="center" src="figs/test_27_x4_k3_usrgan.png" width="446px"/> |
+|<img align="center" src="figs/test_27_x4_k3_LR.png" width="448px"/> | <img align="center" src="figs/test_27_x4_k3_usrgan.png" width="448px"/> |
 |:---:|:---:|
-|<img align="center" src="figs/test_14_x4_k5_LR.png" width="446px"/>| <img align="center" src="figs/test_14_x4_k5_usrgan.png" width="446px"/>|
-|<i>LR images</i>|<i>Results by USRGAN(x4)</i>|
+|<img align="center" src="figs/test_14_x4_k5_LR.png" width="448px"/>| <img align="center" src="figs/test_14_x4_k5_usrgan.png" width="448px"/>|
+|<img align="center" src="figs/test_36_x4_k9_LR.png" width="448px"/>| <img align="center" src="figs/test_36_x4_k9_usrgan.png" width="448px"/>|
+|<i>(a) LR images</i>|<i>(b) Results by USRGAN(x4)</i>|
 
 
 
