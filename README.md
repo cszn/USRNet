@@ -17,7 +17,8 @@ ___________
 * [PSNR results](#psnr-results)
 * [Visual results of USRNet](#visual-results-of-usrnet)
 * [Visual results of USRGAN](#visual-results-of-usrgan)
-* [Results on bicubicly degradated LR images](#results-on-bicubicly-degradated-lr-images)
+* [Results for bicubic degradation](#results-for-bicubic-degradation)
+* [Results for deblurring](#results-for-deblurring)
 * [Generalizability](#generalizability)
 * [Real image SR](#real-image-sr)
 * [Citation](#citation)
@@ -173,7 +174,7 @@ Visual results of USRGAN
 
 
 
-Results on bicubicly degradated LR images
+Results for bicubic degradation
 ----------
 
 By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achieve very promising results for bicubic degradation. Note that the bicubic kernels are not adopted in training.
@@ -195,6 +196,12 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 <img src="figs/test_42_LR_x4.png" width="120px"/> <img src="figs/test_42_x4.png" width="480px"/> 
 
 <i>(a) LR images via bicubic degradation</i>; <i>(b) results by USRGAN(x4)</i>
+
+
+Results for deblurring
+----------
+
+#TODO
 
 
 
