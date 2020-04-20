@@ -27,11 +27,12 @@ ___________
 
 Classical SISR degradation model
 ----------
-<img src="figs/classical_degradation_model.png" width="440px"/> 
+For a scale factor of <img src="/figs/s.svg?invert_in_darkmode&sanitize=true"/>, the classical (traditional) degradation model of SISR assumes the low-resolution (LR) image <img src="/figs/y1.svg?invert_in_darkmode&sanitize=true"/> is a blurred, decimated, and noisy version of a high-resolution (HR) image <img src="/figs/x.svg?invert_in_darkmode&sanitize=true"/>. Mathematically, it can be expressed by
 
-```
-Note: The above degradation model turns into a special case for deblurring when s=1.
-```
+<p align="center"><img src="/figs/degradation_model.svg?invert_in_darkmode&sanitize=true"/></p>
+
+where <img src="/figs/otimes.svg?invert_in_darkmode&sanitize=true"/> represents two-dimensional convolution of <img src="/figs/x.svg?invert_in_darkmode&sanitize=true"/> with blur kernel <img src="/figs/k.svg?invert_in_darkmode&sanitize=true"/>, <img src="/figs/down_s1.svg?invert_in_darkmode&sanitize=true"/> denotes the standard <img src="/figs/s.svg?invert_in_darkmode&sanitize=true" width=8pt height=8pt/>-fold downsampler, i.e., keeping the upper-left pixel for each distinct <img src="/figs/ss.svg?invert_in_darkmode&sanitize=true"/> patch and discarding the others, and n is usually assumed to be additive, white Gaussian noise (AWGN) specified by standard deviation (or noise level) <img src="/figs/sigma.svg?invert_in_darkmode&sanitize=true"/>. With a clear physical meaning, it can approximate a variety of LR images by setting proper blur kernels, scale factors and noises for an underlying HR images. In particular, it has been extensively studied in model-based methods which solve a combination of a data term and a prior term under the MAP framework. Especially noteworthy is that it turns into a special case for deblurring when <img src="/figs/s.svg?invert_in_darkmode&sanitize=true"/> = 1.
+
 
 
 
