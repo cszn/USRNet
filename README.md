@@ -132,7 +132,7 @@ Approximated bicubic kernel under classical SR degradation model assumption
 
 |<img src="figs/bicubic_kernelx2.png" width="285px"/>|<img src="figs/bicubic_kernelx3.png" width="285px"/>|<img src="figs/bicubic_kernelx4.png" width="285px"/>|
 |:---:|:---:|:---:|
-|<i>(a) Bicubic kernel (x2)</i>|<i>(b) Bicubic kernel (x3)</i>|<i>(c) Bicubic kernel (x4)</i>|
+|<i>(a) [Bicubic kernel](kernels/kernels_bicubicx234.mat) (x2)</i>|<i>(b) [Bicubic kernel](kernels/kernels_bicubicx234.mat) (x3)</i>|<i>(c) [Bicubic kernel](kernels/kernels_bicubicx234.mat) (x4)</i>|
 
 The bicubic degradation can be approximated by setting a proper blur kernel for the classical degradation. Note that the bicubic kernels contain negative values.
 
