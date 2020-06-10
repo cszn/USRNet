@@ -50,10 +50,10 @@ testing code of USRNet for the Table 1 in the paper
    |--usrgan_tiny           # model_name, tiny model optimized for perceptual quality
    |--usrnet_tiny           # model_name, tiny model optimized for PSNR
 |--testsets                 # testsets
-   |--real3                 # testset_name, contain 3 real images
+   |--real_set              # testset_name, contain 3 real images
 |--results                  # results
-   |--real3_usrnet          # result_name = testset_name + '_' + model_name
-   |--real3_usrnet_tiny
+   |--real_set_usrnet       # result_name = testset_name + '_' + model_name
+   |--real_set_usrnet_tiny
 # --------------------------------------------
 """
 
