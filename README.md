@@ -112,8 +112,10 @@ Models
 
 Codes
 ----------
-#TODO
 
+* [main_test_table1.py](main_test_table1.py):  _Code to produce the results in Table 1_
+* [main_test_bicubic.py](main_test_bicubic.py):  _Code to super-resolve LR images by bicubic degradation and produce the results in Table 2_
+* [main_test_realapplication.py](main_test_realapplication.py):  _Code to super-resolve real LR images_
 
 
 Blur kernels
@@ -139,6 +141,8 @@ The bicubic degradation can be approximated by setting a proper blur kernel for 
 
 PSNR results
 -----------
+
+Run [main_test_table1.py](main_test_table1.py) to produce the following results.
 
 <img src="figs/psnr.png" width="900px"/>  
 The table shows the average PSNR(dB) results of different methods for different combinations of scale factors, blur kernels and noise levels.
@@ -177,6 +181,8 @@ Visual results of USRGAN
 
 Results for bicubic degradation
 ----------
+
+Run [main_test_bicubic.py](main_test_bicubic.py) to produce the following results.
 
 By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achieve very promising results for bicubic degradation. Note that the bicubic kernels are not adopted in training.
 
@@ -225,6 +231,9 @@ _**Even trained with kernel size 25x25 and scale factor 4, USRGAN generalizes we
 
 Real image SR
 ----------
+
+Run [main_test_realapplication.py](main_test_realapplication.py) to produce the following results.
+
 | <img src="figs/chip.png" width="75px"/>|<img src="figs/chip_x1.png" width="75px"/> |<img src="figs/chip_x2.png" width="150px"/> | <img src="figs/chip_x3.png" width="225px"/>|<img src="figs/chip_x4.png" width="300px"/>|
 |:---:|:---:|:---:|:---:|:---:|
 |<i>LR</i>|<i>USRNet(x1)</i>|<i>USRNet(x2)</i>|<i>USRNet(x3)</i>|<i>USRNet(x4)</i>|
