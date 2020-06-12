@@ -151,6 +151,7 @@ The table shows the average PSNR(dB) results of different methods for different 
 Visual results of USRNet
 ----------
 
+
 <img align="left" src="figs/butterfly_x2_k10_LR.png" width="291px"/>  <img align="center" src="figs/butterfly_x3_k2_LR.png" width="291px"/>  <img align="right" src="figs/butterfly_x4_k7_LR.png" width="291px"/>
 <p align="center"><i>(a) LR images with scale factors 2, 3 and 4</i></p>
 
@@ -208,7 +209,13 @@ By taking the approximated bicubic blur kernel as input, USRNet and USRGAN achie
 Results for deblurring
 ----------
 
-#TODO
+By setting the scale factor to 1, USRNet can handle deblurring problem.
+
+|<img align="center" src="figs/test_09_x1_k12_LR.png" width="448px"/> | <img align="center" src="figs/test_09_x1_k12_usrnet.png" width="448px"/> |
+|:---:|:---:|
+|<img align="center" src="figs/test_16_x1_k12_LR.png" width="448px"/> | <img align="center" src="figs/test_16_x1_k12_usrnet.png" width="448px"/> |
+|<i>(a) Blurry images</i>|<i>(b) Results by USRNet(x1)</i>|
+
 
 
 
