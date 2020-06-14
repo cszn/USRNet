@@ -259,7 +259,7 @@ The above results are obtained via `a single USRNet model` by setting different 
 
 Citation
 ----------
-```
+```BibTex
 @inproceedings{zhang2020deep, % USRNet
   title={Deep unfolding network for image super-resolution},
   author={Zhang, Kai and Van Gool, Luc and Timofte, Radu},
