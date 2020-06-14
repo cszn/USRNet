@@ -103,10 +103,10 @@ Models
 
 |Model|# iters|# params|ResUNet|
 |---|:--:|:---:|:---:|
-|USRNet     | 8 | 17.02M |64-128-256-512|
-|USRGAN     | 8 | 17.02M |64-128-256-512|
-|USRNet-tiny| 6 | 0.59M  |16-32-64-64   |
-|USRGAN-tiny| 6 | 0.59M  |16-32-64-64   |
+|[USRNet](https://drive.google.com/file/d/1qz8aaYOAMhoKn07VppFjRsDflYpxeVmz/view?usp=sharing)     | 8 | 17.02M |64-128-256-512|
+|[USRGAN](https://drive.google.com/file/d/1R5HKJzHJmou-3iUYd4cNLSyMeWXSOmD4/view?usp=sharing)     | 8 | 17.02M |64-128-256-512|
+|[USRNet-tiny](https://drive.google.com/file/d/1xPN26OW5YBN9-5QfK2BGnaovSutH7fLX/view?usp=sharing)| 6 | 0.59M  |16-32-64-64   |
+|[USRGAN-tiny](https://drive.google.com/file/d/1U4BV42Qf0dtBOVbhUNRay6di3j_ioZVM/view?usp=sharing)| 6 | 0.59M  |16-32-64-64   |
 
 
 
