@@ -152,22 +152,22 @@ Visual results of USRNet
 ----------
 
 
-<img align="left" src="figs/butterfly_x2_k10_LR.png" width="280px"/>  <img align="center" src="figs/butterfly_x3_k2_LR.png" width="280px"/>  <img align="right" src="figs/butterfly_x4_k7_LR.png" width="280px"/>
+<img align="left" src="figs/butterfly_x2_k10_LR.png" width="260px"/>  <img align="center" src="figs/butterfly_x3_k2_LR.png" width="260px"/>  <img align="right" src="figs/butterfly_x4_k7_LR.png" width="260px"/>
 <p align="center"><i>(a) LR images with scale factors 2, 3 and 4</i></p>
 
 
-<img align="left" src="figs/butterfly_x2_k10_usrnet.png" width="280px"/> <img align="center" src="figs/butterfly_x3_k2_usrnet.png" width="280px"/> <img align="right" src="figs/butterfly_x4_k7_usrnet.png" width="280px"/>
+<img align="left" src="figs/butterfly_x2_k10_usrnet.png" width="260px"/> <img align="center" src="figs/butterfly_x3_k2_usrnet.png" width="260px"/> <img align="right" src="figs/butterfly_x4_k7_usrnet.png" width="260px"/>
 <p align="center"><i>(b) Results by the single USRNet model with s = 2, 3 and 4</i></p>
 
 
 Visual results of USRGAN
 ----------
 
-<img align="left" src="figs/parrot_x4_k3_LR.png" width="280px"/>  <img align="center" src="figs/parrot_x4_k6_LR.png" width="280px"/>  <img align="right" src="figs/parrot_x4_k12_LR.png" width="280px"/>
+<img align="left" src="figs/parrot_x4_k3_LR.png" width="260px"/>  <img align="center" src="figs/parrot_x4_k6_LR.png" width="260px"/>  <img align="right" src="figs/parrot_x4_k12_LR.png" width="260px"/>
 <p align="center"><i>(a) LR images</i></p>
 
 
-<img align="left" src="figs/parrot_x4_k3_usrgan.png" width="280px"/> <img align="center" src="figs/parrot_x4_k6_usrgan.png" width="280px"/> <img align="right" src="figs/parrot_x4_k12_usrgan.png" width="280px"/>
+<img align="left" src="figs/parrot_x4_k3_usrgan.png" width="260px"/> <img align="center" src="figs/parrot_x4_k6_usrgan.png" width="260px"/> <img align="right" src="figs/parrot_x4_k12_usrgan.png" width="260px"/>
 <p align="center"><i>(b) Results by USRGAN(x4)</i></p>
 
 
