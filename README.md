@@ -4,6 +4,8 @@ _[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich
 
 [[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Deep_Unfolding_Network_for_Image_Super-Resolution_CVPR_2020_paper.pdf)][[Code](https://github.com/cszn/USRNet/blob/9d1cb1c3244b40828c9058b594ed03d43e306bc3/models/network_usrnet.py#L309)]
 
+[[Training code --> KAIR](https://github.com/cszn/KAIR)]
+
 ___________
 
 * [Classical SISR degradation model](#classical-sisr-degradation-model)
