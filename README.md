@@ -2,7 +2,7 @@
 [Kai Zhang](https://cszn.github.io/), [Luc Van Gool](https://vision.ee.ethz.ch/people-details.OTAyMzM=.TGlzdC8zMjQ4LC0xOTcxNDY1MTc4.html), [Radu Timofte](http://people.ee.ethz.ch/~timofter/)  
 _[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich, Switzerland_
 
-[[Paper](https://arxiv.org/pdf/2003.10428.pdf)][[Code](https://github.com/cszn/USRNet/blob/9d1cb1c3244b40828c9058b594ed03d43e306bc3/models/network_usrnet.py#L309)]
+[[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Deep_Unfolding_Network_for_Image_Super-Resolution_CVPR_2020_paper.pdf)][[Code](https://github.com/cszn/USRNet/blob/9d1cb1c3244b40828c9058b594ed03d43e306bc3/models/network_usrnet.py#L309)]
 
 ___________
 
