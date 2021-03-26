@@ -16,7 +16,8 @@ from utils import utils_logger
 from utils import utils_sisr as sr
 from utils import utils_image as util
 
-from models.network_usrnet import USRNet as net
+from models.network_usrnet import USRNet as net   # for pytorch version <= 1.7.1
+# from models.network_usrnet_v1 import USRNet as net  # for pytorch version >= 1.8.1
 
 '''
 Spyder (Python 3.7)
