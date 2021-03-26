@@ -4,6 +4,7 @@ import models.basicblock as B
 import numpy as np
 from utils import utils_image as util
 
+# for pytorch version <= 1.7.1
 
 """
 # --------------------------------------------
