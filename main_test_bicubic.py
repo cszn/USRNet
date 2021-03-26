@@ -109,7 +109,8 @@ def main():
     # ----------------------------------------
     # load model
     # ----------------------------------------
-    from models.network_usrnet import USRNet as net
+    from models.network_usrnet import USRNet as net   # for pytorch version <= 1.7.1
+    # from models.network_usrnet_v1 import USRNet as net  # for pytorch version >=1.8.1
 
     if 'tiny' in model_name:
         model = net(n_iter=6, h_nc=32, in_nc=4, out_nc=3, nc=[16, 32, 64, 64],
