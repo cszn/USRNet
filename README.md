@@ -4,7 +4,21 @@ _[Computer Vision Lab](https://vision.ee.ethz.ch/the-institute.html), ETH Zurich
 
 [[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Deep_Unfolding_Network_for_Image_Super-Resolution_CVPR_2020_paper.pdf)][[Code](https://github.com/cszn/USRNet/blob/9d1cb1c3244b40828c9058b594ed03d43e306bc3/models/network_usrnet.py#L309)]
 
+
+___________
+
 [[Training code --> KAIR](https://github.com/cszn/KAIR)]
+
+`git clone https://github.com/cszn/KAIR.git`
+
+- Training with `DataParallel` - PSNR
+```python
+python main_train_psnr.py --opt options/train_usrnet.json
+```
+- Training with `DistributedDataParallel` - PSNR - 4 GPUs
+```python
+python -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 main_train_psnr.py --opt options/train_usrnet.json  --dist True
+```
 
 ___________
 
