@@ -180,6 +180,25 @@ def main():
 
     img_E = model(img_L, kernel, sf, sigma)
 
+    import mo_pytorch
+    mo_pytorch.convert(model, input_shape='[1, 3, 56, 112],[1, 1, 25, 25],[1],[1, 1, 1, 1]',
+                              input='x{f32},k{f32},sf{f32},sigma{f32}',
+                              model_name='model')
+    
+    from openvino.inference_engine import IECore
+
+    ie = IECore()
+    ie_net = ie.read_network('model.xml', 'model.bin')
+    exec_net = ie.load_network(ie_net, 'CPU')
+    out = exec_net.infer({'x': img_L, 'k': kernel, 'sf': sf, 'sigma': sigma})
+    out = next(iter(out.values()))
+
+    print(img_E.shape)
+    print(out.shape)
+    print(np.min(img_E.detach().numpy()), np.max(img_E.detach().numpy()))
+    print(np.max(np.abs(img_E.detach().numpy() - out)))
+    exit()
+
     img_E = util.tensor2uint(img_E)[:sf*w, :sf*h, ...]
 
     if save_E:

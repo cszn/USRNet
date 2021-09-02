@@ -37,8 +37,8 @@ def splits(a, sf):
     Returns:
         b: NxCx(W/sf)x(H/sf)x2x(sf^2)
     '''
-    b = torch.stack(torch.chunk(a, sf, dim=2), dim=5)
-    b = torch.cat(torch.chunk(b, sf, dim=3), dim=5)
+    b = torch.stack(torch.chunk(a, 4, dim=2), dim=5)
+    b = torch.cat(torch.chunk(b, 4, dim=3), dim=5)
     return b
 
 
@@ -53,8 +53,8 @@ def r2c(x):
 
 def cdiv(x, y):
     # complex division
-    a, b = x[..., 0], x[..., 1]
-    c, d = y[..., 0], y[..., 1]
+    a, b = x[:,:,:,:, 0], x[:,:,:,:, 1]
+    c, d = y[:,:,:,:, 0], y[:,:,:,:, 1]
     cd2 = c**2 + d**2
     return torch.stack([(a*c+b*d)/cd2, (b*c-a*d)/cd2], -1)
 
@@ -67,7 +67,7 @@ def crdiv(x, y):
 
 def csum(x, y):
     # complex + real
-    return torch.stack([x[..., 0] + y, x[..., 1]], -1)
+    return torch.stack([x[:,:,:,:, 0] + y, x[:,:,:,:, 1]], -1)
 
 
 def cabs(x):
@@ -76,7 +76,9 @@ def cabs(x):
 
 
 def cabs2(x):
-    return x[..., 0]**2+x[..., 1]**2
+    real = x[:, :, :, :, 0]**2
+    imag = x[:, :, :, :, 1]**2
+    return real + imag
 
 
 def cmul(t1, t2):
@@ -89,8 +91,8 @@ def cmul(t1, t2):
     Returns:
         output: NxCxHxWx2
     '''
-    real1, imag1 = t1[..., 0], t1[..., 1]
-    real2, imag2 = t2[..., 0], t2[..., 1]
+    real1, imag1 = t1[:, :, :, :, 0], t1[:, :, :, :, 1]
+    real2, imag2 = t2[:, :, :, :, 0], t2[:, :, :, :, 1]
     return torch.stack([real1 * real2 - imag1 * imag2, real1 * imag2 + imag1 * real2], dim=-1)
 
 
@@ -104,8 +106,7 @@ def cconj(t, inplace=False):
         output: NxCxHxWx2
     '''
     c = t.clone() if not inplace else t
-    c[..., 1] *= -1
-    return c
+    return c * torch.tensor([1, -1])
 
 
 def rfft(t):
@@ -142,14 +143,17 @@ def p2o(psf, shape):
     Returns:
         otf: NxCxHxWx2
     '''
-    otf = torch.zeros(psf.shape[:-2] + shape).type_as(psf)
-    otf[...,:psf.shape[2],:psf.shape[3]].copy_(psf)
+    pad = []
+    for a, b in zip(psf.shape[:-2] + shape, psf.shape):
+        pad = [0, a - b] + pad
+    otf = torch.nn.functional.pad(psf, pad)
     for axis, axis_size in enumerate(psf.shape[2:]):
         otf = torch.roll(otf, -int(axis_size / 2), dims=axis+2)
     otf = torch.rfft(otf, 2, onesided=False)
     n_ops = torch.sum(torch.tensor(psf.shape).type_as(psf) * torch.log2(torch.tensor(psf.shape).type_as(psf)))
-    otf[..., 1][torch.abs(otf[..., 1]) < n_ops*2.22e-16] = torch.tensor(0).type_as(psf)
-    return otf
+    real, imag = otf[:, :, :, :, 0], otf[:, :, :, :, 1]
+    imag = torch.where(torch.abs(imag) < n_ops*2.22e-16, torch.tensor(0).type_as(psf), imag)
+    return torch.stack((real, imag), dim=-1)
 
 
 def upsample(x, sf=3):
@@ -160,9 +164,14 @@ def upsample(x, sf=3):
     x: tensor image, NxCxWxH
     '''
     st = 0
-    z = torch.zeros((x.shape[0], x.shape[1], x.shape[2]*sf, x.shape[3]*sf)).type_as(x)
-    z[..., st::sf, st::sf].copy_(x)
-    return z
+    weights = torch.zeros((3, 1, 4, 4))
+    weights[..., st::4, st::4] = 1
+    tmp = torch.nn.functional.conv_transpose2d(x, weights, bias=None,
+                                               stride=(4, 4),
+                                               padding=(0, 0),
+                                               output_padding=(0, 0),
+                                               groups=3, dilation=(1, 1))
+    return tmp
 
 
 def downsample(x, sf=3):
@@ -269,7 +278,7 @@ class DataNet(nn.Module):
         FBR = torch.mean(splits(x1, sf), dim=-1, keepdim=False)
         invW = torch.mean(splits(F2B, sf), dim=-1, keepdim=False)
         invWBR = cdiv(FBR, csum(invW, alpha))
-        FCBinvWBR = cmul(FBC, invWBR.repeat(1, 1, sf, sf, 1))
+        FCBinvWBR = cmul(FBC, invWBR.repeat(1, 1, 4, 4, 1))
         FX = (FR-FCBinvWBR)/alpha.unsqueeze(-1)
         Xest = torch.irfft(FX, 2, onesided=False)
 
@@ -326,15 +335,17 @@ class USRNet(nn.Module):
 
         # initialization & pre-calculation
         w, h = x.shape[-2:]
-        FB = p2o(k, (w*sf, h*sf))
+        FB = p2o(k, (56*4, 112*4))
         FBC = cconj(FB, inplace=False)
         F2B = r2c(cabs2(FB))
         STy = upsample(x, sf=sf)
         FBFy = cmul(FBC, torch.rfft(STy, 2, onesided=False))
-        x = nn.functional.interpolate(x, scale_factor=sf, mode='nearest')
+        x = nn.functional.interpolate(x, scale_factor=4, mode='nearest')
 
         # hyper-parameter, alpha & beta
-        ab = self.h(torch.cat((sigma, torch.tensor(sf).type_as(sigma).expand_as(sigma)), dim=1))
+        tmp = torch.tensor([[[[4.0]]]])
+        tmp1 = torch.cat((sigma, tmp), dim=1)
+        ab = self.h(tmp1)
 
         # unfolding
         for i in range(self.n):
