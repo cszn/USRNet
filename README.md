@@ -46,11 +46,11 @@ ___________
 
 Classical SISR degradation model
 ----------
-For a scale factor of <img src="/figs/s.svg?invert_in_darkmode&sanitize=true"/>, the classical (traditional) degradation model of SISR assumes the low-resolution (LR) image <img src="/figs/y1.svg?invert_in_darkmode&sanitize=true"/> is a blurred, decimated, and noisy version of a high-resolution (HR) image <img src="/figs/x.svg?invert_in_darkmode&sanitize=true"/>. Mathematically, it can be expressed by
+For a scale factor of $\mathbf{s}$, the classical (traditional) degradation model of SISR assumes the low-resolution (LR) image $\mathbf{y}$ is a blurred, decimated, and noisy version of a high-resolution (HR) image $\mathbf{x}$. Mathematically, it can be expressed by
 
-<p align="center"><img src="/figs/degradation_model.svg?invert_in_darkmode&sanitize=true"/></p>
+$$\mathbf{y}=\left(\mathbf{x}\otimes\mathbf{k}\right)\downarrow_{\mathrm{{s}}}+\mathbf{n}$$
 
-where <img src="/figs/otimes.svg?invert_in_darkmode&sanitize=true"/> represents two-dimensional convolution of <img src="/figs/x.svg?invert_in_darkmode&sanitize=true"/> with blur kernel <img src="/figs/k.svg?invert_in_darkmode&sanitize=true"/>, <img src="/figs/down_s1.svg?invert_in_darkmode&sanitize=true"/> denotes the standard <img src="/figs/s.svg?invert_in_darkmode&sanitize=true" width=8pt height=8pt/>-fold downsampler, i.e., keeping the upper-left pixel for each distinct <img src="/figs/ss.svg?invert_in_darkmode&sanitize=true"/> patch and discarding the others, and n is usually assumed to be additive, white Gaussian noise (AWGN) specified by standard deviation (or noise level) <img src="/figs/sigma.svg?invert_in_darkmode&sanitize=true"/>. With a clear physical meaning, it can approximate a variety of LR images by setting proper blur kernels, scale factors and noises for an underlying HR images. In particular, it has been extensively studied in model-based methods which solve a combination of a data term and a prior term under the MAP framework. Especially noteworthy is that it turns into a special case for deblurring when <img src="/figs/s.svg?invert_in_darkmode&sanitize=true"/> = 1.
+where $\otimes$ represents two-dimensional convolution of $\mathbf{x}$ with blur kernel $\mathbf{k}$, $\downarrow_{\mathrm{{s}}}$ denotes the standard $\mathbf{s}$-fold downsampler, i.e., keeping the upper-left pixel for each distinct $\mathbf{s}\times \mathbf{s}$ patch and discarding the others, and n is usually assumed to be additive, white Gaussian noise (AWGN) specified by standard deviation (or noise level) $\mathbf{\sigma}$. With a clear physical meaning, it can approximate a variety of LR images by setting proper blur kernels, scale factors and noises for underlying HR images. In particular, it has been extensively studied in model-based methods which solve a combination of a data term and a prior term under the MAP framework. Especially noteworthy is that it turns into a special case for deblurring when $\mathbf{s} = 1$.
 
 
 
@@ -101,7 +101,7 @@ can be obtained.
 
 Deep unfolding SR network
 ----------
-We proposes an end-to-end trainable unfolding network which leverages both learning-based
+We propose an end-to-end trainable unfolding network which leverages both learning-based
 methods and model-based methods. 
 USRNet inherits the `flexibility of model-based methods` to super-resolve
 blurry, noisy images for different scale factors via `a single
