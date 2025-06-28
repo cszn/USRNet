@@ -1,0 +1,3 @@
+#!/bin/bash
+# Run pytest with Poetry
+poetry run pytest "$@"
